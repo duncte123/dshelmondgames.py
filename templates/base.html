@@ -1,0 +1,128 @@
+$def with (title, name, content)
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta tags -->
+    <link href="https://dshelmondgames.ml/favicon" rel="icon" type="image/x-icon" />
+    <link href="https://dshelmondgames.ml/favicon" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://dshelmondgames.ml/favicon" rel="apple-touch-icon" type="image/x-icon" />
+    <meta content="https://dshelmondgames.ml/favicon" property="og:image" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scaleble=0" />
+    <meta name="category" content="Personal Blog/Website" />
+    <meta name="description" content="official DSHelmondGames website" />
+    <meta name="author" content="Duncan Sterken" />
+    <meta name="keywords" content="Duncan Sterken, duncte123, dunste123, DHG, dshelmondgames, dhg, DSHelmondGames, youtube" />
+    <meta content="DSHelmondGames" property="og:site_name" />
+    <meta content="$title" property="og:title" />
+    <meta content="website" property="og:type" />
+    <meta content="The official DSHelmondGames website" property="og:description" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@duncte123" />
+    <meta name="twitter:title" content="$title" />
+    <meta name="twitter:description" content="The official DSHelmondGames website" />
+    <meta name="twitter:image" content="https://dshelmondgames.ml/favicon" />
+	  <meta name="theme-color" content="#b30000" />
+	  <meta name="msapplication-TileColor" content="#b30000" />
+
+    <!-- style tags -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body{color:#000;margin-top:70px}.img-responsive{display:block}@media screen and (max-width:700px){.video{margin:10px auto;text-align:center;width:100%}.video>img{width:100%}}.navbar,.navbar-default{color:#fff;border:none;background:#b30000;border-bottom:5px solid #8a0000}.navbar-header>.navbar-brand,.navbar>.glyphicon{color:#FFF}.navbar-header>.navbar-brand:hover,.navbar>.glyphicon:hover{color:#CCC}.navbar-default .navbar-nav>.dropdown>.dropdown-menu,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>li>a,.navbar-default .navbar-nav>.dropdown>.dropdown-toggle,.navbar-default .navbar-nav>.open,.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>li>a,.navbar-default .navbar-toggle{color:#FFF;background:#b30000}.navbar-default .navbar-nav>.dropdown>.dropdown-menu:focus,.navbar-default .navbar-nav>.dropdown>.dropdown-menu:hover,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>li>a:focus,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>li>a:hover,.navbar-default .navbar-nav>.dropdown>.dropdown-toggle:focus,.navbar-default .navbar-nav>.dropdown>.dropdown-toggle:hover,.navbar-default .navbar-nav>.open:focus,.navbar-default .navbar-nav>.open:hover,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{color:#CCC;background:#8a0000}.navbar-default .navbar-collapse,.navbar-default .navbar-form,.navbar-default .navbar-toggle{border-color:#8a0000}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#8a0000}.navbar-default .navbar-toggle>.icon-bar{background-color:#DDD}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.dropdown .active>a,.navbar-default .navbar-nav>.dropdown .active>a:focus,.navbar-default .navbar-nav>.dropdown .active>a:hover,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a:focus,.navbar-default .navbar-nav>.dropdown>.dropdown-menu>.active>a:hover,.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{color:#CCC;background:#8a0000}button#menu1{background:url(./033but02.png) no-repeat;height:21px;width:135px;color:#FFF;font-family:verdana,sans-serif,tahoma;font-size:8pt;text-decoration:none;background-color:transparent;cursor:pointer;text-align:center;outline:0}button#menu1:hover{background:url(./033but01.png) no-repeat;height:21px;width:135px;border:none;color:#000;font-family:verdana,sans-serif,tahoma;font-size:8pt;text-decoration:none;background-color:transparent;cursor:pointer;text-align:center;outline:0}.auto{cursor:auto}.default{cursor:default}.none{cursor:none}.context-menu{cursor:context-menu}.help{cursor:help}.pointer{cursor:pointer}.progress{cursor:progress}.wait{cursor:wait}.cell{cursor:cell}.crosshair{cursor:crosshair}.text{cursor:text}.vertical-text{cursor:vertical-text}.alias{cursor:alias}.copy{cursor:copy}.move{cursor:move}.no-drop{cursor:no-drop}.not-allowed{cursor:not-allowed}.all-scroll{cursor:all-scroll}.col-resize{cursor:col-resize}.row-resize{cursor:row-resize}.n-resize{cursor:n-resize}.e-resize{cursor:e-resize}.s-resize{cursor:s-resize}.w-resize{cursor:w-resize}.ns-resize{cursor:ns-resize}.ew-resize{cursor:ew-resize}.ne-resize{cursor:ne-resize}.nw-resize{cursor:nw-resize}.se-resize{cursor:se-resize}.sw-resize{cursor:sw-resize}.nesw-resize{cursor:nesw-resize}.nwse-resize{cursor:nwse-resize}.custom{cursor:url(images/my-cursor.png),auto}.custom2{cursor:url(files/pijl.png);background:#000}.bulb{width:20px;height:20px;display:inline-block;margin:0 10px;border-radius:100% 4px;transform:rotate(-45deg)}.bulb:nth-child(odd){background:#6CB6FF;opacity:1;box-shadow:1px 1px 15px #6CB6FF,-1px -1px 15px #6CB6FF;animation:bulb-pulse-1 .8s linear 0s infinite alternate}.bulb:nth-child(even){background:#0C0;opacity:.3;box-shadow:1px 1px 15px #0C0,-1px -1px 15px #0C0;animation:bulb-pulse-2 .8s linear 0s infinite alternate}@keyframes bulb-pulse-1{from{opacity:1;box-shadow:1px 1px 15px #6CB6FF,-1px -1px 15px #6CB6FF}to{box-shadow:none;opacity:.3}}@keyframes bulb-pulse-2{from{box-shadow:none;opacity:.3}to{opacity:1;box-shadow:1px 1px 15px #0C0,-1px -1px 15px #0C0}}code{display:block;white-space:pre;color:#000;padding:10px;line-height:1.5em;font-family:"Lucida Console",Monaco,monospace;overflow:scroll}.code-str{color:#999}.code-elem{color:#0c49ff}.code-elem-php{color:red}.code-elem-php-blue{color:#2626ff}.code-elem-php-dollar{color:#7594ff}.code-doctype{color:#222;background-color:#99b3ff}.code-comment{color:#008c00}.listnenrs{color:#b00092}.javab{color:#0d0082}.red{color:#ff0d0d}.video{float:left;margin-bottom:10px;text-align:center;min-width:50%}.video>img{width:100%}
+    </style>
+
+    <title>$title</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <a class="navbar-brand" href="/home">DSHelmondGames</a></div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="defaultNavbar1">
+          <ul class="nav navbar-nav">
+            <li id="home"><a href="/home">Home</a></li>
+            <li id="home"><a href="/videos">Videos</a></li>
+            <!-- <li id="videos"><a href="/videos">Videos</a></li>-->
+
+            <li id="command_creations"  class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Command Creations <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <li class="dropdown-item">nothing</li>
+              </ul>
+            </li>
+            <li><a href="https://duncte123.me/" hreflang="en" target="_blank">Portfolio</a></li>
+          </ul>
+
+           <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://beam.pro/duncte123" hreflang="en" target="_blank">Beam</a></li>
+            <li><a href="https://vid.me/duncte123" hreflang="en" target="_blank">Vidme</a></li>
+            <li><a href="https://www.twitch.tv/duncte123" hreflang="en" target="_blank">Twitch</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+      <!-- https://gyazo.com/52f5f3b82f48dc062b17a56536936449 -->
+    </nav>
+    <div id="lights" style="text-align: center;"></div>
+    $:content
+    <div class="row">
+        <div class="text-center col-md-12">
+         <div class="g-ytsubscribe" data-channel="DSHelmondGames" data-layout="full" data-count="default"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 text-center">
+        <!--buttons-->
+            <!-- google translate
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div id="google_translate_element"></div>-->
+  
+        </div>
+        <div class="text-center col-sm-4">
+          <div id="server"></div>
+        </div>
+        <div class="text-center col-sm-4">
+            <!--gekke tekentjes-->
+            <!-- <div class="fb-like" data-href="https://www.facebook.com/dshelmondgames" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div> -->
+        </div>
+        </div>
+      <hr>
+      <div class="row">
+        <div class="text-center col-md-6 col-md-offset-3">
+          <p>Copyright &copy; 2015-<span id="year"></span> <a href="https://twitter.com/duncte123" target="_blank">Duncan Sterken</a> &middot; All Rights Reserved</p>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+            <div class="text-center col-md-6 col-md-offset-3">
+              <p>Fun fact: this website is made in python.</p>
+            </div>
+          </div>
+    </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <!--<script src="js/jquery-1.11.2.min.js"></script>-->
+      <script src="https://dshelmondgames.ml/js/jquery-2.2.0.min.js"></script>
+      <!--on line-->
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <!--<script src="js/bootstrap.js"></script>-->
+      <script src="https://dshelmondgames.ml/js/bootstrap.min.js"></script>
+      <script src="https://dshelmondgames.ml/js/main.js"></script>
+      <script src="https://dshelmondgames.ml/js/syntax.js"></script>
+      <!-- youtube sub button -->
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <script>
+        _("year").innerHTML = new Date().getFullYear();
+      </script>
+    </body>
+  </html>
