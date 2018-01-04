@@ -3,6 +3,7 @@
 import web, urllib2, json
 web.config.debug = True
 render = web.template.render('templates/')
+#enter your youtube api key here
 youtubeKey = ""
 urls = (
     '/', 'index',
@@ -35,14 +36,15 @@ class videos:
                 </div>
             </div></div>
               <br /><br /><br /><br /><div id="videosList" class="text-center">""".format(data["items"][0]["id"]["videoId"])
+        data["items"].pop(0)
         for i, item in enumerate(data["items"]):
             output += """<div class="video">
-                <a href="https://www.youtube.com/watch?v={}" target="_blank" title="view via youtube: {}">
-                    <img alt="{}" width="196" src="https://i.ytimg.com/vi/{}/mqdefault.jpg" />
+                <a href="https://www.youtube.com/watch?v={0}" target="_blank" title="view via youtube: {1}">
+                    <img alt="{1}" width="196" src="https://i.ytimg.com/vi/{0}/mqdefault.jpg" />
                 </a>
                 <br />
-                <a href="https://www.youtube.com/watch?v={}" target="_blank">{}</a>
-            </div>""".format(item["id"]["videoId"], item["snippet"]["title"], item["snippet"]["title"], item["id"]["videoId"], item["id"]["videoId"], item["snippet"]["title"])
+                <a href="https://www.youtube.com/watch?v={0}" target="_blank">{1}</a>
+            </div>""".format(item["id"]["videoId"], item["snippet"]["title"].encode('unicode-escape'))
 
         output += """
               </div>
