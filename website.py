@@ -1,9 +1,11 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-import web, urllib2, json
+import web
+import json
+from urllib.request import urlopen
 web.config.debug = True
 render = web.template.render('templates/')
-#enter your youtube api key here
+# enter your youtube api key here
 youtubeKey = ""
 urls = (
     '/', 'index',
@@ -15,13 +17,13 @@ class index:
     def GET(self):
         with open ("templates/index.html", "r") as myfile:
             data = myfile.read()
-	    return render.base("Home", "home", data)
+        return render.base("Home", "home", data)
 
 class videos:
     def GET(self):
-        youtubeData = urllib2.urlopen('https://www.googleapis.com/youtube/v3/search?key={}&channelId=UColI-lvoN08jXBfc1EqDR8g&part=snippet,id&order=date&maxResults=11'.format(youtubeKey))
-        youtubeJSON = youtubeData.read()
-        data = json.loads(youtubeJSON)
+        youtube_data = urlopen('https://www.googleapis.com/youtube/v3/search?key={}&channelId=UColI-lvoN08jXBfc1EqDR8g&part=snippet,id&order=date&maxResults=11'.format(youtubeKey))
+        youtube_json = youtube_data.read()
+        data = json.loads(youtube_json)
         
         output = """<div class="container">
             <div class="row text-center">
@@ -53,12 +55,16 @@ class videos:
             <hr>
         
         """
-
-
         return render.base("Videos", "videos", output)
+
+
+def notfound():
+    return web.notfound(render.base("404 not found", "404 not found",
+                                    "<p class=\"text-center\">Your requested page could not be found</p>"))
 
 
 if __name__ == "__main__":
     app = web.application(urls, globals(), True)
+    app.notfound = notfound
     app.run()
 
